@@ -1,0 +1,40 @@
+#!/bin/bash
+
+function foreach() {
+    f=$1
+    shift
+    xs=$@
+    for x in $xs;
+    do
+        $f $x
+    done
+}
+
+function link_name() {
+    echo ~/\.`basename $1 | sed 's/\(.*\).link/\1/'`
+}
+
+function check_if_exists() {
+    file=`link_name $1`
+    echo -n "> checking $file ... "
+    if [ -e "$file" ];
+    then
+        echo "already exits, aborting!"
+        exit "1"
+    fi
+    echo "ok"
+}
+
+function install() {
+    file=`link_name $1`
+    echo "> installing $1 -> $file"
+}
+
+files=(`find . -name '*.link' | grep -v '/.git/'`)
+
+echo "checking if all files can be linked ..."
+foreach "check_if_exists" ${files[@]}
+echo "looks fine, friend!"
+echo "installing files ..."
+foreach "install" ${files[@]}
+echo "all done!"
