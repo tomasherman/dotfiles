@@ -11,7 +11,7 @@ function foreach() {
 }
 
 function link_name() {
-    echo ~/\.`basename $1 | sed 's/\(.*\).link/\1/'`
+    echo ~/\.`basename $1 | sed 's/^\(.*\).link$/\1/'`
 }
 
 function check_if_exists() {
