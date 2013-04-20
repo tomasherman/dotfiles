@@ -1,6 +1,3 @@
-[submodule "emacs/emacs.d.link"]
-	path = emacs/emacs.d.link
-	url = git://github.com/bbatsov/prelude.git
 [submodule "zsh/oh-my-zsh.link"]
 	path = zsh/oh-my-zsh.link
 	url = git://github.com/robbyrussell/oh-my-zsh.git
