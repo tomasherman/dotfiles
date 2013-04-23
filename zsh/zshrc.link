@@ -46,3 +46,13 @@ export EDITOR="emacsclient -c"
 alias ec="emacsclient -c"
 alias et="emacsclient -t"
 alias es="killall emacs; emacs --daemon"
+
+DOTFILES_ROOT="$HOME/dotfiles"
+#cd $DOTFILES_ROOT
+#git pull origin master
+
+for f in `find "$DOTFILES_ROOT/zsh/include" -name '*.zsh'`;
+do 
+   echo "including $f"
+   . $f
+done
