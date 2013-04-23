@@ -51,8 +51,8 @@ DOTFILES_ROOT="$HOME/dotfiles"
 #cd $DOTFILES_ROOT
 #git pull origin master
 
+#load zsh libraries
 for f in `find "$DOTFILES_ROOT/zsh/include" -name '*.zsh'`;
 do 
-   echo "including $f"
    . $f
 done
