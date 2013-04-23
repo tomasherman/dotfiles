@@ -49,3 +49,8 @@ echo "looks fine, friend!"
 echo "installing files ..."
 foreach "install" ${files[@]}
 echo "all done!"
+
+echo "updating submodules"
+git submodule init
+git submodule update
+
