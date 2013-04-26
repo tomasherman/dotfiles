@@ -1,0 +1,8 @@
+#!/bin/bash
+file=$1
+tab=$'\t'
+sep=${2:-'	'}
+
+echo $sep
+
+column -s"$sep" -t < $file | less -#2 -N -S
