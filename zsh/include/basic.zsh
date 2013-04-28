@@ -1,5 +1,3 @@
-unsetopt correct_all
-
 export TERM="xterm-256color"
 export EDITOR="emacsclient -c"
 alias ec="emacsclient -c"

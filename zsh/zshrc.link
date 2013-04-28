@@ -36,6 +36,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+unsetopt correct
+
 DOTFILES_ROOT="$HOME/dotfiles"
 
 # Customize to your needs...
