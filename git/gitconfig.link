@@ -1,0 +1,16 @@
+[diff]
+        tool = ediff
+        guitool = ediff
+
+[difftool "ediff"]
+        cmd = /home/tomas/dotfiles/cmd/ediff $LOCAL $REMOTE $MERGED
+
+[merge]
+        tool = ediff
+
+[mergetool "ediff"]
+        cmd = /home/tomas/dotfiles/cmd/ediff $LOCAL $REMOTE $MERGED $BASE
+        trustExitCode = true
+[user]
+	name = Tomas Herman
+	email = tomas.herman@gmail.com
