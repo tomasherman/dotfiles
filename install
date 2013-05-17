@@ -21,9 +21,18 @@ function link_path() {
 }
 
 function clean() {
-    file=`link_path $1`
-    echo "> cleaning $1"
-    rm -f $file
+    original=$1
+    link_name=`link_name $original`
+    link_path=`link_path $original`
+    on_clean="$original/on_clean_hook.sh"
+    if [ -e $on_clean ];
+    then
+        echo "    >> running $on_clean: $on_link"
+        $on_clean $link_name $link_path $SYNCED_DIR
+    fi
+    echo "> cleaning $link_path"
+    rm -f $link_path
+
 }
 
 function check_if_exists() {
@@ -48,7 +57,7 @@ function install() {
 
     if [ -e $on_link ];
     then
-        echo "    >> running on link hook: $on_link"
+        echo "    >> running $on_link: $on_link"
         $on_link $link_name $link_path $SYNCED_DIR
     fi
 }
