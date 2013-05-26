@@ -48,6 +48,13 @@ export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/u
 
 #load zsh libraries
 for f in `find "$DOTFILES_ROOT/zsh/include" -name '*.zsh'`;
-do 
-   . $f
+do
+    . $f
+done
+
+#load host specific libraries
+for f in `find "$DOTFILES_ROOT/zsh/host-specific" -name "$USER@$HOST.zsh"`;
+do
+    echo $f
+    . $f
 done
