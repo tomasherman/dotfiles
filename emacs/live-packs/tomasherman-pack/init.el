@@ -7,3 +7,4 @@
 (live-load-config-file "packages.el")
 (live-load-config-file "bindings.el")
 (live-load-config-file "setup.el")
+(live-load-config-file "modes.el")
