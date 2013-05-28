@@ -3,3 +3,4 @@ cd ~/dotfiles
 (git pull origin master 1>/dev/null 2>/dev/null &) #autoupdate dotfiles on login ... possible race conditions here (?)
 cd ~
 
+setxkbmap -option ctrl:swapcaps -layout us 2>/dev/null #setxkbmap won't be on servers
