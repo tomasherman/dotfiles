@@ -1,27 +1,24 @@
-set imap_user		= tomas.herman
-set smtp_url		= smtp://tomas.herman@smtp.gmail.com:587/
-set from		= tomas.herman@gmail.com
-set realname		= "Tomas Herman"
+source "gpg -d ~/.mutt/passwords.gpg |"
 set editor		= 'emacsclient -c'
- 
+
 # Don't let your firewall kill your idle connection.
 set imap_keepalive	= 900
- 
+
 # Do not copy sent mail.  Gmail smtp already does this.
 set copy		= no
- 
+
 set folder		= imaps://imap.gmail.com:993
 set spoolfile		= +INBOX #or +[Gmail]/Important
 set postponed		= +[Gmail]/Drafts
- 
+
 # This is using the 'trash' patch.
 set trash		= +[Gmail]/Trash
- 
+
 # Cache
 set header_cache	= ~/.mutt/cache/headers
 set message_cachedir	= ~/.mutt/cache/bodies
 set certificate_file	= ~/.mutt/certificates
- 
+
 # Gmail style keybindings
 bind  editor <space> noop
 bind  index,pager c  mail 		#Compose
@@ -47,18 +44,19 @@ macro index,pager gt "<change-folder>=[Gmail]/Sent Mail<enter>"	"Go to 'Sent Mai
 folder-hook +INBOX 'macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive conversation"'
 folder-hook +[Gmail]/Trash macro index,pager y <save-message>=INBOX<enter><enter> "Move to inbox"
 folder-hook +[Gmail]/Starred bind  index,pager y flag-message #"Toggle star"
- 
+
 # This should be ' »›-‹L' to match Gmail, but $to_chars breaks on unicode.
 set to_chars		= ' +>-<L'
 # Don't move read mail.
 set move		= no
- 
+
 # Sort by newest conversation first.
 set sort		= reverse-threads
 set sort_aux		= last-date-received
- 
+
 # Contact aliases, could also use `goobook`.
 set alias_file		= ~/.mutt/aliases
 set sort_alias		= alias
 set reverse_alias	= yes
 set reverse_name	= yes
+auto_view text/html
