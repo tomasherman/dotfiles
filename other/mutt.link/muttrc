@@ -1,4 +1,4 @@
-source "gpg -d ~/.mutt/authinfo.gpg |"
+source "gpg2 -d ~/.mutt/authinfo.gpg |"
 set editor		= 'emacsclient -c'
 
 # Don't let your firewall kill your idle connection.
