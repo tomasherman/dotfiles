@@ -8,3 +8,4 @@
 (live-load-config-file "bindings.el")
 (live-load-config-file "setup.el")
 (live-load-config-file "modes.el")
+(live-load-config-file "ensime.el")
