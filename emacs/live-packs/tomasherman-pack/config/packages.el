@@ -7,7 +7,8 @@
 (setq package-archives '(("elpa" . "http://tromey.com/elpa/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")
                          ("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")))
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("sunrise" . "http://joseito.republika.pl/sunrise-commander/")))
 
 ;;;;;;;;; elpa bollocks:
 
