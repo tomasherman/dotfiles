@@ -14,3 +14,5 @@
 [user]
 	name = Tomas Herman
 	email = tomas.herman@gmail.com
+[core]
+        editor = emacsclient
