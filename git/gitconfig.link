@@ -16,4 +16,4 @@
 	email = tomas.herman@gmail.com
 [core]
         editor = emacsclient
-	excludesfile = /home/tomas/.gitignore_global
+	excludesfile = ~/.gitignore_global
