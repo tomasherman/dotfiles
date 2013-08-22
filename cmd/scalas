@@ -1,0 +1,2 @@
+LAUNCHER=`find /home/$USER/.sbt/launchers/ -name 'sbt-launch.jar' | head -n1`
+$JAVACMD -Dsbt.main.class=sbt.ScriptMain -Dsbt.boot.directory=/home/$USER/.sbt/boot -jar $LAUNCHER "$@"
