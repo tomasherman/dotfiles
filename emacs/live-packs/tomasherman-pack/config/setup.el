@@ -5,3 +5,6 @@
 ; setup projectile variables
 (setq projectile-cache-file "~/dotfiles/emacs/.projectile.cache")
 (setq projectile-known-projects-file "~/dotfiles/emacs/.projectile.bookmarks")
+
+(add-hook 'term-mode-hook (lambda ()
+                            (yas-minor-mode -1)))
