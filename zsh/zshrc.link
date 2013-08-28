@@ -57,3 +57,7 @@ for f in `find "$DOTFILES_ROOT/zsh/host-specific" -name "$USER@$HOST.zsh"`;
 do
     . $f
 done
+
+if [ $EMACS ]; then
+   export TERM=dumb #if the shell is being ran from emacs ...
+fi
