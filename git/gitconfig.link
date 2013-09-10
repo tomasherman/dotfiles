@@ -11,9 +11,7 @@
 [mergetool "ediff"]
         cmd = ~/dotfiles/cmd/ediff $LOCAL $REMOTE $MERGED $BASE
         trustExitCode = true
-[user]
-	name = Tomas Herman
-	email = tomas.herman@gmail.com
+
 [core]
         editor = emacsclient
 	excludesfile = ~/.gitignore_global

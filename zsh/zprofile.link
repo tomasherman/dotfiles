@@ -1,5 +1,5 @@
 #!/bin/zsh
-setxkbmap -option ctrl:swapcaps -layout us 2>/dev/null #setxkbmap won't be on servers
+#setxkbmap -option ctrl:swapcaps -layout us 2>/dev/null #setxkbmap won't be on servers
 (emacs --daemon 1>/dev/null 2>/dev/null &)
 
 cd ~/dotfiles
