@@ -1,2 +1,7 @@
 #emacs shit
 .#*
+
+#eclipse
+.settings/
+*.classpath
+atlassian-ide-plugin.xml

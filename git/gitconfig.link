@@ -15,3 +15,6 @@
 [core]
         editor = emacsclient
 	excludesfile = ~/.gitignore_global
+[user]
+	name = Tomas Herman
+	email = tomas.herman@gmail.com
