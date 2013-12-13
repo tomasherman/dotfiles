@@ -1,7 +1,3 @@
-[diff]
-        tool = ediff
-        guitool = ediff
-
 [difftool "ediff"]
         cmd = ~/dotfiles/cmd/ediff $LOCAL $REMOTE $MERGED
 
@@ -15,3 +11,5 @@
 [core]
         editor = emacsclient
 	excludesfile = ~/.gitignore_global
+[diff]
+	external = /Users/tomasherman/dotfiles/cmd/opendiff-git.sh

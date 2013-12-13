@@ -4,4 +4,4 @@
 
 [submodule "emacs/emacs.d.link"]
 	path = emacs/emacs.d.link
-	url = git://github.com/overtone/emacs-live.git
+	url = git://github.com/bbatsov/prelude.git
