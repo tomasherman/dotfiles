@@ -1,0 +1,4 @@
+kill `ps aux | grep java | grep ABCDEF | awk '{print $2}'`
+ps aux | grep chromedriver | awk '{print $2}' | xargs kill
+ps aux | grep 'org.chromium.Chromium' | awk '{print $2}' | xargs kill
+lsof -i -P | grep '^mongod' | awk '{print $2}' | xargs kill
