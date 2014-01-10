@@ -11,5 +11,3 @@
 [core]
         editor = emacsclient
 	excludesfile = ~/.gitignore_global
-[diff]
-	external = /Users/tomasherman/dotfiles/cmd/opendiff-git.sh
