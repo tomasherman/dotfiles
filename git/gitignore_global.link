@@ -1,6 +1,7 @@
 #emacs shit
 .#*
-
+.ensime
+.ensime_lucene
 #eclipse
 .settings/
 *.classpath
