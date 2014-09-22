@@ -1,7 +1,7 @@
 export TERM="xterm-256color"
 export EDITOR="emacsclient -c"
-alias ec="emacsclient -c"
-alias et="emacsclient -t"
+ec () { emacsclient -c $1 & }
+et () { emacsclient -t $1 & }
 alias es="emacsclient -e '(kill-emacs)'; emacs --daemon"
 
 alias magic-devel="ssh-add; ssh -A tomas@magic-devel.int.wikidi.net"
