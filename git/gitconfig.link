@@ -13,3 +13,4 @@
 	excludesfile = ~/.gitignore_global
 [user]
 	email = tomas.herman@gmail.com
+	name = Tomas Herman
