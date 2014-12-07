@@ -1,7 +1,9 @@
 export TERM="xterm-256color"
 export EDITOR="emacsclient -c"
-ec () { emacsclient -c $1 & }
-et () { emacsclient -t $1 & }
+ec () { emacsclient -c $@ & }
+et () { emacsclient -t $@ }
+
+alias deft="ec --eval '(deft)'"
 alias es="emacsclient -e '(kill-emacs)'; emacs --daemon"
 
 alias zima="ssh-add;ssh -A tomash@zima.int.wikidi.net"
