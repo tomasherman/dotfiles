@@ -7,8 +7,11 @@ alias deft="ec --eval '(deft)'"
 alias es="emacsclient -e '(kill-emacs)'; emacs --daemon"
 
 alias zima="ssh-add;ssh -A tomash@zima.int.wikidi.net"
-alias chicago="ssh golem@chicago.wikidi.net"
+alias chicago="ssh -A golem@chicago.wikidi.net"
 alias cisar="ssh -A golem@cisar.int.wikidi.net"
+alias michigan="ssh -A golem@michigan.wikidi.net"
+alias golem="ssh -A golem@golem.int.wikidi.net"
+
 alias wikidi="cd ~/workspace/wikidi"
 
 PROJECT_PATHS=(~/workspace/wikidi ~/workspace)
