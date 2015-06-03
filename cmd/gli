@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+mydir=$(mktemp "-tgitlab-issue")
+
+title="$@"
+
+issueFile=$mydir
+
+echo $title > $issueFile
+
+emacsclient -c $issueFile
+
+
+result=`gitlab create quantlab/trader/issue -m "\`cat $issueFile\`" | grep \# | cut -d\  -f1 | cut -d\# -f2`
+open "http://gitlab.int.wikidi.net/quantlab/trader/issues/$result"
+
