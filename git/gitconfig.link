@@ -10,9 +10,9 @@
 
 [core]
         editor = emacsclient
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/hermant/.gitignore_global
 [user]
-	email = tomas.herman@gmail.com
+	email = hermant@avast.com
 	name = Tomas Herman
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
