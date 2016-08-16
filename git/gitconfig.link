@@ -22,3 +22,5 @@
 	trustExitCode = true
 [push]
 	default = simple
+[commit]
+	template = /Users/hermant/.stCommitMsg
