@@ -7,10 +7,10 @@ emacs () { emacsclient -a '' -c $@ & }
 alias deft="ec --eval '(deft)'"
 alias es="emacsclient -e '(kill-emacs)' ; ec"
 alias es-nore="emacs --daemon"
-alias gb = "./gradlew build"
-alias gt = "./gradlew test"
-alias gf = "./gradlew scalafmt"
-alias gc = "./gradlew clean"
+alias gb="./gradlew build"
+alias gt="./gradlew test"
+alias gf="./gradlew scalafmt"
+alias gc="./gradlew clean"
 
 PROJECT_PATHS=(~/workspace/wikidi ~/workspace)
 
