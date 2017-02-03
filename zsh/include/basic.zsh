@@ -2,20 +2,15 @@ export TERM="xterm-256color"
 export EDITOR="emacsclient -c"
 ec () { emacsclient -a '' -c $@ & }
 et () { emacsclient -a '' -t $@ }
+emacs () { emacsclient -a '' -c $@ & }
 
 alias deft="ec --eval '(deft)'"
-alias es="emacsclient -e '(kill-emacs)'; emacs --daemon"
+alias es="emacsclient -e '(kill-emacs)' ; ec"
 alias es-nore="emacs --daemon"
-
-
-alias zima="ssh-add;ssh -A tomash@zima.int.wikidi.net"
-alias chicago="ssh -A golem@chicago.wikidi.net"
-alias cisar="ssh -A golem@cisar.int.wikidi.net"
-alias sosac="ssh -A golem@sosac.int.wikidi.net"
-alias michigan="ssh -A golem@michigan.wikidi.net"
-alias golem="ssh -A golem@golem.int.wikidi.net"
-
-alias wikidi="cd ~/workspace/wikidi"
+alias gb = "./gradlew build"
+alias gt = "./gradlew test"
+alias gf = "./gradlew scalafmt"
+alias gc = "./gradlew clean"
 
 PROJECT_PATHS=(~/workspace/wikidi ~/workspace)
 
