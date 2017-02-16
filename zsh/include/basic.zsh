@@ -12,6 +12,10 @@ alias gt="./gradlew test"
 alias gf="./gradlew scalafmt"
 alias gc="./gradlew clean"
 
+
+## bash emacs mode
+bindkey -e
+
 PROJECT_PATHS=(~/workspace/wikidi ~/workspace)
 
 setxkbmap -option ctrl:swapcaps -layout us 2>/dev/null #setxkbmap won't be on servers
