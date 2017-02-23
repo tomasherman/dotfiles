@@ -1,5 +1,7 @@
 export TERM="xterm-256color"
 export EDITOR="emacsclient -c"
+
+export LC_CTYPE="en_US.UTF-8"
 ec () { emacsclient -a '' -c $@ & }
 et () { emacsclient -a '' -t $@ }
 emacs () { emacsclient -a '' -c $@ & }
