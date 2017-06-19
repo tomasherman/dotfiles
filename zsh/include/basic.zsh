@@ -30,3 +30,5 @@ upload() {
     shift
     scp $@ golem@$name.wikidi.net:'~';
 }
+
+# . /usr/local/etc/profile.d/z.sh
