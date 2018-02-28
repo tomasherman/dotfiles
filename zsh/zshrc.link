@@ -18,7 +18,7 @@ ZSH_THEME="ys" #robbyrussell"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
+# export UPDATE_ZSH_DAYS=13xx
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -32,7 +32,7 @@ ZSH_THEME="ys" #robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew pj gradle docker mvn)
+plugins=(git brew pj gradle docker mvn kubectl zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 
