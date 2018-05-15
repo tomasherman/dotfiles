@@ -9,4 +9,3 @@ atlassian-ide-plugin.xml
 .idea
 .gradletasknamecache
 .DS_Store
-*.sc

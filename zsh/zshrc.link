@@ -70,3 +70,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="/usr/local/opt/protobuf@2.6/bin:$PATH"
+
+alias java10="export JAVA_HOME=`/usr/libexec/java_home -v 10`"
+alias java9="export JAVA_HOME=`/usr/libexec/java_home -v 9`"
+alias java8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
+
+java8
+

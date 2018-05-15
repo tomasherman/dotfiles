@@ -24,3 +24,5 @@
 	default = simple
 [commit]
 	template = /Users/hermant/.stCommitMsg
+[pager]
+	branch = false
