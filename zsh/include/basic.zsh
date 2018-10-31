@@ -14,6 +14,22 @@ alias gt="./gradlew test"
 alias gf="./gradlew scalafmt"
 alias gc="./gradlew clean"
 
+cqlsh-avast () {
+    usage="connect to cassandra server using cqlsh - args: keyspace username node port"
+
+    if [ "$1" = "-h" ] ; then
+        echo $usage
+    fi
+
+    if [ "$#" -ne 4 ] ; then
+        echo $usage
+    fi
+
+    if [ "$#" -eq 4 ] ; then
+        # args: keyspace username server port
+        docker run -it --rm cassandra sh -c "export SSL_VALIDATE=false; exec cqlsh --ssl -k ${1} -u ${2} ${3} ${4}"
+    fi
+}
 
 ## bash emacs mode
 bindkey -e
@@ -22,7 +38,7 @@ PROJECT_PATHS=(~/workspace/wikidi ~/workspace)
 
 setxkbmap -option ctrl:swapcaps -layout us 2>/dev/null #setxkbmap won't be on servers
 
-export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/bin:~/Library/Python/3.7/bin
 export GRADLE_OPTS='-Dorg.gradle.daemon=true'
 
 upload() {
