@@ -11,6 +11,7 @@
 [core]
         editor = emacsclient
 	excludesfile = /Users/hermant/.gitignore_global
+	hooksPath = /Users/hermant/dotfiles/git/hooks
 [user]
 	email = hermant@avast.com
 	name = Tomas Herman
