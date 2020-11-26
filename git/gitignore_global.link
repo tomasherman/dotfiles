@@ -12,3 +12,7 @@ atlassian-ide-plugin.xml
 .project
 *.iml
 out
+.java-version
+.metals/
+.bloop/
+.pre-commit-config.yaml

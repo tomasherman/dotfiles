@@ -1,0 +1,17 @@
+fields:
+  project:
+    key: RING
+  issuetype:
+    name: Task
+  summary: >-
+    {{ or .overrides.summary "" }}
+  description: |
+    {{ or .overrides.description "" | indent 4 }}
+  customfield_17332:
+    - value: Platform
+  customfield_17430:
+    value: Security
+  timetracking:
+    originalEstimate: 4h
+  reporter:
+    emailAddress: tomas.herman@avast.com

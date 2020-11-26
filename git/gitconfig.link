@@ -12,9 +12,11 @@
         editor = emacsclient
 	excludesfile = /Users/hermant/.gitignore_global
 	hooksPath = /Users/hermant/dotfiles/git/hooks
+	autocrlf = input
 [user]
 	email = hermant@avast.com
-	name = Tomas Herman
+	name = Tomáš Heřman
+	signingkey = 197A9A59
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -25,6 +27,7 @@
 	default = current
 [commit]
 	template = /Users/hermant/.stCommitMsg
+	gpgsign = true
 [pager]
 	branch = false
 [diff "sopsdiffer"]
