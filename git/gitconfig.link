@@ -27,7 +27,7 @@
 	default = current
 [commit]
 	template = /Users/hermant/.stCommitMsg
-	gpgsign = true
+#	gpgsign = true
 [pager]
 	branch = false
 [diff "sopsdiffer"]
