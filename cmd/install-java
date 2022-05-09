@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java "$1"
+jenv add "$HOME/.sdkman/candidates/java/$1"

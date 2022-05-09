@@ -32,7 +32,14 @@ ZSH_THEME="ys" #robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew pj gradle docker docker-compose mvn kubectl zsh-completions fzf vault kubectl)
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+plugins=(git brew pj gradle docker docker-compose mvn kubectl fzf vault kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -69,11 +76,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-
-
-eval "$(pyenv init -)"
-
 export VAULT_ADDR=https://vault.tools.llabs.io
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
@@ -89,3 +91,5 @@ source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 PS1='$(kube_ps1)'$PS1
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+source "$HOME/.sdkman/bin/sdkman-init.sh"
