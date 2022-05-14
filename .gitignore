@@ -21,3 +21,4 @@ session*
 ac-comphist.dat
 jira-templates/jira.d.link/config.yml
 jira-templates/jira.d.link/cookies.js
+.idea

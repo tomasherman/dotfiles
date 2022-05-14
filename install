@@ -74,6 +74,10 @@ echo "installing files ..."
 foreach "install" ${files[@]}
 echo "all done!"
 
+echo "Installing keybindings"
+mkdir -p ~/Library/KeyBindings
+cp Library/KeyBindings/* ~/Library/KeyBindings
+
 echo "updating submodules"
 git submodule init
 git submodule update
