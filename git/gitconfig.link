@@ -31,3 +31,5 @@
 	branch = false
 [diff "sopsdiffer"]
 	textconv = sops -d
+[pull]
+	rebase = false

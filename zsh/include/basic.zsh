@@ -1,5 +1,5 @@
 export TERM="xterm-256color"
-export EDITOR="emacsclient -c"
+export EDITOR="code --wait"
 
 export LC_CTYPE="en_US.UTF-8"
 ec () { emacsclient -a '' -c $@ & }
