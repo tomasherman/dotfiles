@@ -33,3 +33,5 @@
 	textconv = sops -d
 [pull]
 	rebase = false
+[init]
+	defaultBranch = master
