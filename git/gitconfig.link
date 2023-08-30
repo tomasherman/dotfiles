@@ -9,11 +9,11 @@
         trustExitCode = true
 
 [core]
-	excludesfile = /Users/hermant/.gitignore_global
+	excludesfile = /Users/tomas.herman/.gitignore_global
 	hooksPath = /Users/hermant/dotfiles/git/hooks
 	autocrlf = input
 [user]
-	email = tomas.herman@avast.com
+	email = tomas.herman@gendigital.com
 	name = Tomáš Heřman
 	signingkey = 197A9A59
 [difftool "sourcetree"]

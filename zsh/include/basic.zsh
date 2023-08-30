@@ -27,7 +27,7 @@ cqlsh-avast () {
 
     if [ "$#" -eq 4 ] ; then
         # args: keyspace username server port
-        docker run -it --rm cassandra sh -c "export SSL_VALIDATE=false; exec cqlsh --ssl -k ${1} -u ${2} ${3} ${4}"
+        docker run -it --rm cassandra:3 sh -c "export SSL_VALIDATE=false; exec cqlsh --ssl -k ${1} -u ${2} ${3} ${4}"
     fi
 }
 
